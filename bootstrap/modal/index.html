@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Modal</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <nav>
+      <ul class="nav-list">
+        <li>Products</li>
+        <li>Learn More</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+
+    <div class="main col-md-6 text-center mx-auto">
+      <div class="details">
+        <h1>Get updated on our best product daily</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore consectetur quasi accusantium aliquid obcaecati similique, laboriosam aspernatur vero soluta. Harum minima saepe, rem quia ullam nulla at magnam exercitationem.
+        </p>
+      </div>
+      <!-- Button trigger modal -->
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe to our Newsletter</button>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Subscribe to our Newsletter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

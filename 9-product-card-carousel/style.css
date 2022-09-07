@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+}
+.container{
+    width: 70%!important;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    min-height: 350px;
+    min-width: 150px;
+    max-width: 250px;
+    border-radius: 50px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.card-image{
+    background-color: red;
+    border-radius: 20px;
+}
+.card-image img{
+    width: 100%;
+    transform: rotate(10deg);
+    transition: all ease-in-out .4s;
+}
+.card-image img:hover{
+    transform: rotate(-10deg) scale(1.2);
+}
+.card-body{
+    padding: 1rem;
+    text-align: center;
+}
+.card-body h2, .card-body h3, .card-body p{
+    line-height: 10px;
+}
+.card-body p{
+    text-decoration: line-through;
+    color: #bdbebe;
+}
+.card-body .rating-icons{
+    color: #eecb02;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.card-body button{
+    border: 0;
+    width: 80%;
+    border-radius: 50px;
+    padding: 0.5rem;
+    font-family: inherit;
+    color: #fff;
+}
+#red .card-image, #red .card-body button{
+    background-color: #df3846;
+}
+#red .card-body h2{
+    color: #df3846;
+}
+#green .card-image, #green .card-body button{
+    background-color: #6ed681;
+}
+#green .card-body h2{
+    color: #6ed681;
+}
+#black .card-image, #black .card-body button{
+    background-color: #5a5a5a;
+}
+#black .card-body h2{
+    color: #5a5a5a;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next{
+    position: absolute;
+    background-color: #fff!important;
+    color: #000;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%!important;
+    top: 30%;
+    font-size: 30px!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+.owl-nav .owl-prev{
+    left: -20px;
+}
+.owl-nav .owl-next{
+    right: -20px;
+}

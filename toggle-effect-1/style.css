@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e2fce2;
+}
+.toggle-container{
+    position: relative;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(238, 237, 236);
+    border-radius: 100px;
+    transition: all ease .5s;
+    box-shadow: inset 2px 5px 20px rgba(0, 0, 0, 0.1),
+                inset 2px -5px 20px rgba(0, 0, 0, 0.05);
+}
+.toggle-container.active{
+    background-color: rgb(6, 177, 28);
+}
+.toggle-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: scale(0.85);
+}
+.toggle-container.active .toggle-indicator{
+    left: 150px;
+}

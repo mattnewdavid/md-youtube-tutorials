@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
+  <script src="https://kit.fontawesome.com/ba57058827.js" crossorigin="anonymous"></script>
+  <title>Product Card Carousel</title>
+</head>
+<body>
+    <div class="owl-carousel owl-theme container">
+      <div class="card" id="red">
+        <div class="card-image">
+          <img src="trainers-1.png">
+        </div>
+        <div class="card-body">
+          <h3>Red Sneakers</h3>
+          <h2>$200.00</h2>
+          <p>$400.00</p>
+          <div class="rating-icons">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card" id="green">
+        <div class="card-image">
+          <img src="trainers-2.png">
+        </div>
+        <div class="card-body">
+          <h3>Red Sneakers</h3>
+          <h2>$200.00</h2>
+          <p>$400.00</p>
+          <div class="rating-icons">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card" id="black">
+        <div class="card-image">
+          <img src="trainers-3.png">
+        </div>
+        <div class="card-body">
+          <h3>Red Sneakers</h3>
+          <h2>$200.00</h2>
+          <p>$400.00</p>
+          <div class="rating-icons">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card" id="green">
+        <div class="card-image">
+          <img src="trainers-2.png">
+        </div>
+        <div class="card-body">
+          <h3>Red Sneakers</h3>
+          <h2>$200.00</h2>
+          <p>$400.00</p>
+          <div class="rating-icons">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button>Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        center: true,
+        loop: true,
+        dots: true,
+        nav: true,
+        autoplay: true,
+        smartSpeed: 1000,
+        resposiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          1000: {
+            items: 3,
+          }
+        }
+      })
+    </script>
+</body>
+</html>

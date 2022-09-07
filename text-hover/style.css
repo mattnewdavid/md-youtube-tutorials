@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+    background: rgb(36, 32, 32);
+    font-family: 'poppins';
+}
+.container{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tabs h4{
+    font-size: 40px;
+    color: rgb(9, 253, 160);
+}
+.tabs{
+    background: #000;
+    margin: 20px;
+    /* max-width: 300px; */
+    transform: rotate(90deg);
+    transition: all ease .5s;
+}
+.tabs:hover{
+    margin: 0 40px;
+    transform: rotate(0deg);
+}
+.tabs .text{
+    display: none;
+    color: #fff;
+}
+.tabs:hover .text{
+    display: block;
+}
